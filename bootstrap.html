@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- This is the Nav Bar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Hello World Inc.</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Contact Us
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Send an email</a>
+                    <a class="dropdown-item" href="#">Facebook</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Contact Form</a>
+                  </div>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+            <!--This part below is the Modal for "Contact Us"-->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Full Name:</label>
+                          <input type="text" class="form-control" id="recipient-name" value="Sean Wei">
+                        </div>
+                        <div class="form-group">
+                          <label for="message-text" class="col-form-label">Email Address:</label>
+                          <input type="text" class="form-control" id="message-text" value="name@example.com">
+                        </div>
+                        <!--This is the drop-down-->
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Enquiry Type:</label>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-white">Action</button>
+                                <button type="button" class="btn btn-white dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#">Separated link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                      <button type="button" class="btn btn-primary">Send message</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </nav>
+        <!--This is the carousel-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Fire.jpg" class="d-block w-100" alt="fire">
+              </div>
+              <div class="carousel-item">
+                <img src="Water.jpg" class="d-block w-100" alt="water">
+              </div>
+              <div class="carousel-item">
+                <img src="Wind.jpg" class="d-block w-100" alt="wind">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!--This is the Jumbotron-->
+        <div class="jumbotron jumbotron-fluid bg-dark">
+          <div class="container">
+            <h1 class="display-4 text-white">Welcome to Hello World Incorporated</h1>
+            <p class="lead text-white">Where code meets cleanliness</p>
+          </div>
+        </div>
+        <h1 style="margin-left:5%">Latest Products</h1>
+        <!--This is the cards for the products-->
+        <div style="display:flex; flex-direction:row; justify-content: center;">
+          <div class="card" style="width: 18rem; margin:3%">
+            <img src="Fire.jpg" class="card-img-top" alt="fire">
+            <div class="card-body">
+              <h5 class="card-title">HelloWorld Coders Shampoo</h5>
+              <p class="card-text">Been staring at your code for too long and scratching your head wondering how to solve the problem, well maybe the answer has been staring you in the face the whole time. Try HelloWorld coders shampoo today!</p>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#buy-item1" data-whatever="@fat">Buy Now!</a>
+              <div class="modal fade" id="buy-item1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Recipient:</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                          <label for="message-text" class="col-form-label">Message:</label>
+                          <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Send message</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem; margin:3%">
+            <img src="Water.jpg" class="card-img-top" alt="water">
+            <div class="card-body">
+              <h5 class="card-title">HelloWorld Coders Conditioner</h5>
+              <p class="card-text">What's the use of having soft coders fingers from all that coding if you don't have soft hair to match? Well worry not as HelloWorld Coder Conditioner is here to save the day. Try it now, your fingersand your hair will love you for it</p>
+              <a href="#" class="btn btn-primary">Buy Now!</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem; margin:3%">
+            <img src="Wind.jpg" class="card-img-top" alt="wind">
+            <div class="card-body">
+              <h5 class="card-title">HelloWorld Coders Facewash</h5>
+              <p class="card-text">Bugs stress you out and unexpected CSS behaviour can cause extreme perspiration. Make sure you use HellowWorld Coders Facewash to wash away those worries and keep your face just as clean as your code. What are you waiting for?</p>
+              <a href="#" class="btn btn-primary">Buy Now!</a>
+            </div>
+          </div>
+        </div>
+    </body>
+    <footer>
+        
+    </footer>
+</html>
